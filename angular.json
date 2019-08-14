@@ -42,14 +42,16 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": false,
+            "extractCss": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
               "node_modules/devextreme/dist/css/dx.common.css",
-              "src/themes/generated/theme.base.css",
               "src/themes/generated/theme.additional.css",
+              { "input": "node_modules/devextreme/dist/css/dx.material.blue.light.css", "inject": false, "bundleName": "dx.material.blue.light" },
+              { "input": "node_modules/devextreme/dist/css/dx.material.orange.light.css", "inject": false, "bundleName": "dx.material.orange.light" },
               "src/dx-styles.scss",
               "src/styles.scss"
             ],
