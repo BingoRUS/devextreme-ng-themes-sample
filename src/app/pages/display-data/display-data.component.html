@@ -10,7 +10,6 @@
 
     <dxo-paging [pageSize]="10"></dxo-paging>
     <dxo-pager [showPageSizeSelector]="true" [showInfo]="true"></dxo-pager>
-    <dxo-filter-row [visible]="true"></dxo-filter-row>
 
     <dxi-column
         dataField="Task_ID"
@@ -19,7 +18,7 @@
     </dxi-column>
     <dxi-column
         dataField="Task_Subject"
-        [width]="190"
+        [width]="290"
         caption="Subject"
         [hidingPriority]="8">
     </dxi-column>
@@ -39,12 +38,6 @@
         </dxo-lookup>
     </dxi-column>
     <dxi-column
-        dataField="ResponsibleEmployee.Employee_Full_Name"
-        caption="Assigned To"
-        [allowSorting]="false"
-        [hidingPriority]="7">
-    </dxi-column>
-    <dxi-column
         dataField="Task_Start_Date"
         caption="Start Date"
         dataType="date"
@@ -55,15 +48,5 @@
         caption="Due Date"
         dataType="date"
         [hidingPriority]="4">
-    </dxi-column>
-    <dxi-column
-        dataField="Task_Priority"
-        caption="Priority"
-        [hidingPriority]="1">
-    </dxi-column>
-    <dxi-column
-        dataField="Task_Completion"
-        caption="Completion"
-        [hidingPriority]="0">
     </dxi-column>
 </dx-data-grid>
